@@ -1,0 +1,194 @@
+/* Corpo da página */
+body {
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+    color: #000000;
+}
+
+/* Cabeçalho */
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+    background-color: #c80000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Navegação */
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    margin: 0;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.2rem; 
+    transition: color 0.3s, transform 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #000000;
+    transform: scale(1.1);
+}
+
+nav ul li a:focus {
+    outline: 2px solid #c80000;
+}
+
+
+/* Carrossel */
+.carousel {
+    display: flex;
+    overflow: hidden;
+    margin: 20px 0;
+}
+
+.carousel img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.5s ease;
+    flex: 0 0 auto;
+}
+
+/* Principal */
+main {
+    padding: 20px;
+}
+
+/* Títulos */
+h2 {
+    color: #c80000;
+    border-bottom: 2px solid #ff0c0c;
+    padding-bottom: 10px;
+}
+
+/* Contêiner de Cards */
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 20px 0;
+}
+
+/* Cards */
+.card {
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    margin: 15px;
+    padding: 20px;
+    width: 250px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+.card h3 {
+    color: #c80000;
+}
+
+/* Rodapé */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #000000;
+    color: #c80000;
+}
+
+footer a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+footer p {
+    margin: 5px 0;
+}
+
+/* Listas */
+ul {
+    padding-left: 20px;
+}
+
+ul li {
+    margin-bottom: 10px;
+}
+
+/* Estilo para o Carrossel */
+@media (max-width: 768px) {
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    .card-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 90%;
+    }
+
+    .carousel {
+        flex-direction: column;
+    }
+}
+
+.carousel-inner img {
+    height: 500px;
+    object-fit: cover;
+}
+
+.card {
+    margin: 20px 0;
+    background: rgba(255, 255, 255, 0.8);
+    border: none;
+}
+
+.card-body {
+    position: relative;
+    z-index: 1;
+}
+
+.card-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 0;
+    opacity: 0.5;
+    background-size: cover;
+    background-position: center;
+}
