@@ -1,2 +1,2 @@
 # Formula-Diva
-Site solicitado para complementar a atividade de portfólio do SENAI 
+Site com o intuito de apresentar o esporte automobilístico de Fórmula Um 
